@@ -7,7 +7,7 @@ body{
     padding-top: 0%;
     width: 99%;
 }
-
+/*navegacion*/
 .nav1{
     background:rgba(0,0,0,.2);
     width: 100%;
@@ -32,6 +32,10 @@ body{
     font-weight: 600;
     padding: 25px;
 }
+.nav1 a:hover {
+    color: #550909;
+}
+/*sobre mi*/
 .jumbotron1{
     width:80%;
     background: rgb(233, 226, 226);
@@ -55,11 +59,14 @@ hr{
 .container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    grid-template-rows: minmax(400px,auto);
+    gap: 1em;
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif;
     color: rgb(31, 15, 15);
     padding: 2%;
     margin: 2%;
+    
     
 }
 
@@ -129,10 +136,20 @@ ul li .fa{
 .card-title{
     color: rgb(6, 46, 48);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size:30px;
 }
 .proyectos{
     display: flex;
     justify-content: space-between;
+
+}
+
+.container1{
+    display: grid;
+    grid-template-columns: repeat(1fr 1fr 1fr);
+    gap: 1em;
+
 }
 /*footer*/
 footer {
@@ -166,7 +183,7 @@ footer {
 }
   
 .social i:hover {
-    color: #ec0000;
+    color: #37ec00;
 }
 footer.second {
     border-top: 1px solid #aadcd2;
