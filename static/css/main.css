@@ -66,8 +66,6 @@ hr{
     color: rgb(31, 15, 15);
     padding: 2%;
     margin: 2%;
-    
-    
 }
 
 #descrip{
@@ -147,7 +145,8 @@ ul li .fa{
 
 .container1{
     display: grid;
-    grid-template-columns: repeat(1fr 1fr 1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: minmax(400px,auto);
     gap: 1em;
 
 }
@@ -195,4 +194,15 @@ footer.second p, .second a {
     color: #fff;
     font-size: 160%;
     line-height: 155%;
+}
+@media(max-width:700px){
+    body{
+        background: chartreuse;
+    }
+    .container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container1{
+        grid-template-columns: 1fr;
+    }
 }
